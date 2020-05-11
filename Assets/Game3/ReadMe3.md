@@ -121,4 +121,4 @@ public class Game3Controller : MonoBehaviour
 }
 ```
 
-That is it for now, you can continue [reading](../ReadMe.After.md) for details.
+That is it for now, you can continue [reading](../../ReadMeAfter.md) for details.
