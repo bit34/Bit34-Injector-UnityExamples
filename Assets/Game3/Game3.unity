@@ -644,11 +644,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2061949485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3c09c92a950147eaa4a12461863243b, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fe0c002baf3240ffb1317f568c33dcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settingsPanel: {fileID: 1734660463993742}
-  _musicPlayerPanel: {fileID: 1282969322376248}
+  _injectionTargets:
+  - {fileID: 1734660463993741}
+  - {fileID: 1282969322376247}
 --- !u!1 &1067043822941145
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,7 +733,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1282969322376247}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70aa27d70dea848a7a4214e8e0adcb67, type: 3}
+  m_Script: {fileID: 11500000, guid: ea6cdbe07cc65412dad6a6485c172ad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _volumeValueText: {fileID: 114373434253390915}
@@ -820,7 +821,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1734660463993741}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dadf8f6ac99ba42e191f81fe6a99f61d, type: 3}
+  m_Script: {fileID: 11500000, guid: f413fbba89b79466d97dbb9ac387f5d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _volumeUpButton: {fileID: 114448298469968377}

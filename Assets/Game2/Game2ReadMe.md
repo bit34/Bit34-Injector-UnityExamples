@@ -44,4 +44,4 @@ public class Game2Controller : MonoBehaviour
 ```
 This is where **Dependency injection** library shines. It will automate this task with minimal effort.
 
-We are all set to move to [Game3](../Game3/ReadMe3.md) folder to see our library in action.
+We are all set to move to [Game3](../Game3/Game3ReadMe.md) folder to see our library in action.

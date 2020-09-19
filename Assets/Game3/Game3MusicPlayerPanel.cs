@@ -11,11 +11,6 @@ public class Game3MusicPlayerPanel : MonoBehaviour
 #pragma warning restore 0649
 
     //  METHODS
-    public void InitPanel(IGame3Settings settings)
-    {
-        _settings = settings;
-    }
-
     private void Update ()
 	{
         _volumeValueText.text = _settings.Volume.ToString("0.0");

@@ -21,24 +21,14 @@ public class Game3Controller : MonoBehaviour
 
     private void AddBindings()
     {
-        bool loadSettings = true;
-        if(loadSettings)
-        {
-            //  Create your object and initialize
-            Game3Settings settings = new Game3Settings();
-            settings.Volume = 0.5f;
-            settings.IsMusicPlaying = true;
-            
-            //  Bind those types to instance
-            _injector.AddBinding<Game3Settings>().ToValue(settings);
-            _injector.AddBinding<IGame3Settings>().ToValue(settings);
-        }
-        else
-        {
-            //  Bind those types to Game3Settings, it will be instantiated when first needed
-            _injector.AddBinding<Game3Settings>().ToType<Game3Settings>();
-            _injector.AddBinding<IGame3Settings>().ToType<Game3Settings>();
-        }
+        //  Create your object and initialize
+        Game3Settings settings = new Game3Settings();
+        settings.Volume = 0.5f;
+        settings.IsMusicPlaying = true;
+        
+        //  Bind those types to instance
+        _injector.AddBinding<Game3Settings>().ToValue(settings);
+        _injector.AddBinding<IGame3Settings>().ToValue(settings);
     }
 
     private void InjectToTargets()

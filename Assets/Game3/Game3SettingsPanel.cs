@@ -12,11 +12,6 @@ public class Game3SettingsPanel : MonoBehaviour
 #pragma warning restore 0649
 	
     //  METHODS
-    public void InitPanel(Game3Settings settings)
-    {
-        _settings = settings;
-    }
-
     private void Start()
     {
         _volumeUpButton.onClick.AddListener(OnVolumeUpButtonClick);

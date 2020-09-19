@@ -1,32 +1,8 @@
-# Unity tutorial for dependency injection library
+# **Unity tutorial for Bit34 dependency injection library**
 
-### Main Motivation
-WIP
+## Tutorial steps
+1. [A step back](Assets/Game1/Game1ReadMe.md)
+1. [Better point to start](Assets/Game2/Game2ReadMe.md)
+1. [Do it for me, please](Assets/Game3/Game3ReadMe.md)
 
-Why...
-- prevent human error
-- automatize work
-- abstraction
-
-
-Let's briefly define some terms to fresh our knowladge.
-
-### Dependency injection
-When developing your application classes they will eventually need references of other class. In other words will **depend** on others to function properly. If your provide those references through constructors, setters or methods that means you are **injecting** your **dependences**.
-
-### Coupling and Decoupling
-WIP
-
-
-## Chapters
-- [Game1](Assets/Game1/ReadMe1.md)
-- [Game2](Assets/Game2/ReadMe2.md)
-- [Game3](Assets/Game3/ReadMe3.md)
-- [Further details](ReadMeAfter.md)
-
-
-
-
-[Source only repository with a quick tutorial](https://github.com/bit34/Bit34-DI)
-
-[Development repository](https://github.com/bit34/Bit34-DI-Development)
+Source of this library is available [here](https://github.com/bit34/Bit34-DI).

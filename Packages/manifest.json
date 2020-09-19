@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.bit34games.di": "https://github.com/bit34/Bit34-DI-UPM.git#v1.0.0",
+    "com.bit34games.di": "https://github.com/bit34/Bit34-DI-UPM.git#v1.1.0",
     "com.unity.package-manager-ui": "2.0.8",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
@@ -35,8 +35,8 @@
   },
   "lock": {
     "com.bit34games.di": {
-      "revision": "v1.0.0",
-      "hash": "5204e8effafc6d61c7a2f3bad0628ad5e31bf2fa"
+      "revision": "v1.1.0",
+      "hash": "39baef27119d203b91b5449f5b01c578ff39ad8d"
     }
   }
 }
