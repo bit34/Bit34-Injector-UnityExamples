@@ -1,3 +1,4 @@
+[< - Back](../../ReadMe.md) 
 ## Game 1 - A step back
 
 Here is a small project. It may look ok but has some issues that will cause problems when it gets larger. Let's point out and fix some of those before moving forward to using dependency injection library.
@@ -20,4 +21,4 @@ Inspector is a great tool for managing references and values within editor, but 
 
 You can access **any** public field of **any** component of **any** game object in the scene. This may sounds like something good but it just leads to bad practices. There should be a level of data access restriction to keep data access under control.
 
-Lets move on to [Game2](../Game2/Game2ReadMe.md) where we fix some of those cases.
+Lets move on to [Game2](../Game2/Game2ReadMe.md) where we fix some of those issues.

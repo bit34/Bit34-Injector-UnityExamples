@@ -1,3 +1,4 @@
+[< - Back](../../ReadMe.md) 
 ## Game 3 - Do it for me, please
 
 Let's integrate our library step by step
@@ -8,14 +9,14 @@ Before writing any code we have to add our library package to **manifest.json** 
 ```
 {
   "dependencies": {
-    "com.bit34games.di": "https://github.com/bit34/Bit34-DI-UPM.git#v1.0.0",
+    "com.bit34games.injector": "https://github.com/bit34/bit34-injector-upm.git#v1.0.0",
 
     ...
 
 }
 ```
 
-if your version of Unity does not support packages you can download and add it to your library directly from [Github](https://github.com/bit34/Bit34-DI)
+if your version of Unity does not support packages you can download and add it to your library directly from [Github](https://github.com/bit34/bit34-injector)
 
 ### 1. Add attributes
 First, you have to add `[Inject]` attribute to the fields or properties where you want to receive instances. They can be public or private.
@@ -43,18 +44,18 @@ public class Game3SettingsPanel : MonoBehaviour
 ```
 
 ### 2. Create injector
-Create an instance of `Injector` class. This instance will hold your references to be injected to your project.
+Create an instance of `InjectorContext` class. This instance will hold your references to be injected to your project.
 
 ```
 public class Game3Controller : MonoBehaviour
 {
     ...
 
-	private Injector _injector;
+	private InjectorContext _injector;
 
     ...
 
-    Injector injector = new Injector();
+    _injector = new InjectorContext();
 
     ...
 }
@@ -83,11 +84,11 @@ It is time to add bindings. Bindings will define which instance will be assigned
 NOTE : To use automatic instantiation your binded type must have a parameterless constructor.
 
 ```
-    //  this lines mean; when one of "[Inject] Game3Settings" or "[Inject] IGame3Settings" fields 
-    //  first encountered a new instance of "Game3Settings" be created and assigned. 
+    //  this lines mean; when one of "[Inject] Game3Settings" or "[Inject] IGame3Settings" fields
+    //  first encountered a new instance of "Game3Settings" be created and assigned.
     //  All subsequent ones will receive that same instance  
-    _Injector.AddBinding<Game3Settings>()  .ToType<Game3Settings>();
-    _Injector.AddBinding<IGame3Settings>() .ToType<Game3Settings>();
+    _injector.AddBinding<Game3Settings>()  .ToType<Game3Settings>();
+    _injector.AddBinding<IGame3Settings>() .ToType<Game3Settings>();
 ```
 
 ### 4. Inject dependencies
@@ -101,7 +102,7 @@ Here is the best part, the code below will not change for any number of type bin
 public class Game3Controller : MonoBehaviour
 {
     ...
-    
+
 	[SerializeField] private GameObject[] _injectionTargets;
 
     ...
@@ -113,7 +114,7 @@ public class Game3Controller : MonoBehaviour
         MonoBehaviour[] scriptlist = injectionTarget.GetComponents<MonoBehaviour>();
         foreach (MonoBehaviour script in scriptlist)
         {
-            //  Perform injections : Find fields with [Inject] attribute 
+            //  Perform injections : Find fields with [Inject] attribute
             //  and assign binded values to them
             _injector.InjectInto(script);
         }

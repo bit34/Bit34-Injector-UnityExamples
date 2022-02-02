@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using Com.Bit34Games.DI;
+using Com.Bit34Games.Injector;
 
 public class Game3Controller : MonoBehaviour
 {
@@ -7,13 +7,13 @@ public class Game3Controller : MonoBehaviour
 #pragma warning disable 0649
 	[SerializeField] private GameObject[] _injectionTargets;
 #pragma warning restore 0649
-	private Injector _injector;
+	private InjectorContext _injector;
 	
     //  METHODS
 	void Awake ()
 	{
         //  Create injector
-		_injector = new Injector(true);
+		_injector = new InjectorContext(true);
 
         AddBindings();
         InjectToTargets();
