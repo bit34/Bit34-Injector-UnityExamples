@@ -1,4 +1,4 @@
-[< - Back](../../ReadMe.md) 
+[< - Back](../ReadMe.md) 
 ## Game 2 - Better point to start
 
 ### Entry point

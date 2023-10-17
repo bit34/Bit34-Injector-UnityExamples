@@ -1,4 +1,4 @@
-[< - Back](../../ReadMe.md) 
+[< - Back](../ReadMe.md) 
 ## Game 3 - Do it for me, please
 
 Let's integrate our library step by step

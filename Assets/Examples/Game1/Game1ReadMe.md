@@ -1,4 +1,4 @@
-[< - Back](../../ReadMe.md) 
+[< - Back](../ReadMe.md) 
 ## Game 1 - A step back
 
 Here is a small project. It may look ok but has some issues that will cause problems when it gets larger. Let's point out and fix some of those before moving forward to using dependency injection library.
