@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.bit34games.injector": "https://github.com/bit34/bit34-injector-upm.git#v2.0.0",
+    "com.bit34games.injector": "https://github.com/bit34/bit34-injector-upm.git#v3.0.0",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.ide.rider": "1.2.1",
