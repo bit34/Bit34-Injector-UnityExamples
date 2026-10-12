@@ -1,11 +1,11 @@
 {
   "dependencies": {
     "com.bit34games.injector": {
-      "version": "https://github.com/bit34/bit34-injector-upm.git#v2.0.0",
+      "version": "https://github.com/bit34/bit34-injector-upm.git#v3.0.0",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "7a35e4b4eb3e2321413cfd11adc54a25b04c9266"
+      "hash": "5960136cf246c16a16324405660982485831effa"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
